@@ -3,7 +3,12 @@ import pickle
 import string
 from nltk.corpus import stopwords
 import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('corpus')
 from nltk.stem.porter import PorterStemmer
+
+
 ps = PorterStemmer()
 def transform_text(text):
     text = text.lower()
